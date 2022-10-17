@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/yasminpaul/interactiondesign/static/css/main.e6c13ad2.css",
+    "main.js": "/yasminpaul/interactiondesign/static/js/main.275bcfc4.js",
+    "static/js/787.cbcb3f2c.chunk.js": "/yasminpaul/interactiondesign/static/js/787.cbcb3f2c.chunk.js",
+    "static/media/loader-idea1.gif": "/yasminpaul/interactiondesign/static/media/loader-idea1.8224c548b2a310ebb966.gif",
+    "index.html": "/yasminpaul/interactiondesign/index.html",
+    "main.e6c13ad2.css.map": "/yasminpaul/interactiondesign/static/css/main.e6c13ad2.css.map",
+    "main.275bcfc4.js.map": "/yasminpaul/interactiondesign/static/js/main.275bcfc4.js.map",
+    "787.cbcb3f2c.chunk.js.map": "/yasminpaul/interactiondesign/static/js/787.cbcb3f2c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.275bcfc4.js"
+  ]
+}
