@@ -1,3 +1,7 @@
+#### Hosted site: https://yasminpaul.github.io/interactiondesign/
+
+#### Github Repo: https://github.com/yasminpaul/interactiondesign/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
