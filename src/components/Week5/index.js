@@ -1,8 +1,8 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import closeIcon from "./close_icon.svg";
-import {Button} from "../Week3/index.js";
-import {Swipeable} from "react-swipeable";
+import burgerMenu from "./burger_menu.svg"
+import { useSwipeable } from "react-swipeable";
 
 const StyledWrapper = styled.div`
     display: flex;
@@ -46,10 +46,23 @@ const StyledNav = styled.ul`
         }
     }`;
 
+const StyledBurgerMenu = styled.img`
+    float: right;
+    width: 50px;
+    height: 50px;
+    fill: black;
+    margin: 1rem 1rem;
+    cursor: pointer;
+`;
+
 
 const Week5 = () => {
 
     const [navOpen, setNavOpen] = useState(true);
+    const handleSwipe = useSwipeable({
+        trackmouse: true,
+        onSwipedRight: () => setNavOpen(true)
+    });
 
     const handleClose = () => {
         setNavOpen(false);
@@ -59,8 +72,9 @@ const Week5 = () => {
         setNavOpen(true);
     };
 
+
     return (<>
-        <StyledWrapper>
+        <StyledWrapper {...handleSwipe} >
             <StyledSideNav open={navOpen}>
                 <StyledCLoseIcon onClick={handleClose} src={closeIcon} />
                 {
@@ -72,9 +86,11 @@ const Week5 = () => {
                     </StyledNav>)
                 }
             </StyledSideNav>
+            <StyledBurgerMenu onClick={handleOpen} src={burgerMenu} />
 
-            <Button onClick={handleOpen} color="#8e2f9d"> Open Menu </Button>
-        </StyledWrapper></>
+        </StyledWrapper>
+
+    </>
     );
 };
 

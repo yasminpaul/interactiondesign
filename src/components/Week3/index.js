@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 
-const StyledWrapper= styled.div`
+const StyledWrapper = styled.div`
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -26,17 +26,17 @@ const StyledButton = styled.button`
 
 export const Button = (props) => {
 
-    const{children, color} = props;
-    return <StyledButton color={color}>{children}</StyledButton>;
+    const { children, color, ...other } = props;
+    return <StyledButton color={color}{...other}>{children}</StyledButton>;
 };
 
 const Week3 = () => {
     return (
-    <StyledWrapper>
-        <Button color="#a727d4"> Button 1</Button>
-        <Button color="#ef3181"> Button 2</Button>
-        <Button color="#d427ce"> Button 3</Button>
-    </StyledWrapper>);
+        <StyledWrapper>
+            <Button color="#a727d4"> Button 1</Button>
+            <Button color="#ef3181"> Button 2</Button>
+            <Button color="#d427ce"> Button 3</Button>
+        </StyledWrapper>);
 };
 
 export default Week3;
