@@ -3,7 +3,9 @@ import loaderIdea1 from "./loader-idea1.gif";
 import styled from "styled-components";
 
 const OuterWrapper = styled.div`
+    display: flex;
     background: #232323;
+    justify-content: center;
     width: 100vw;
     height: 100vh;
 `;
