@@ -30,7 +30,7 @@ export const Button = (props) => {
     return <StyledButton color={color}{...other}>{children}</StyledButton>;
 };
 
-const Week3 = () => {
+const ButtonCom = () => {
     return (
         <StyledWrapper>
             <Button color="#a727d4"> Button 1</Button>
@@ -39,4 +39,4 @@ const Week3 = () => {
         </StyledWrapper>);
 };
 
-export default Week3;
+export default ButtonCom;
