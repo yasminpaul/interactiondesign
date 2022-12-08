@@ -1,16 +1,21 @@
 {
   "files": {
-    "main.css": "/interactiondesign/static/css/main.e6c13ad2.css",
-    "main.js": "/interactiondesign/static/js/main.6f7e9963.js",
+    "main.css": "/interactiondesign/static/css/main.ac217e46.css",
+    "main.js": "/interactiondesign/static/js/main.1f98c3f6.js",
     "static/js/787.cbcb3f2c.chunk.js": "/interactiondesign/static/js/787.cbcb3f2c.chunk.js",
+    "static/media/loader-idea4.gif": "/interactiondesign/static/media/loader-idea4.029ee9dd616792d2cd3a.gif",
     "static/media/loader-idea1.gif": "/interactiondesign/static/media/loader-idea1.8224c548b2a310ebb966.gif",
+    "static/media/profile-picture.png": "/interactiondesign/static/media/profile-picture.6546446bb6f8f9389008.png",
+    "static/media/dropdown_menu.svg": "/interactiondesign/static/media/dropdown_menu.8f8999d9fc4a1126759677e4f6ed86c3.svg",
     "index.html": "/interactiondesign/index.html",
-    "main.e6c13ad2.css.map": "/interactiondesign/static/css/main.e6c13ad2.css.map",
-    "main.6f7e9963.js.map": "/interactiondesign/static/js/main.6f7e9963.js.map",
+    "static/media/burger_menu.svg": "/interactiondesign/static/media/burger_menu.62557ac9b9ca198421fe9bad393245e0.svg",
+    "static/media/close_icon.svg": "/interactiondesign/static/media/close_icon.2377c96c126d5408ba501965ab27905f.svg",
+    "main.ac217e46.css.map": "/interactiondesign/static/css/main.ac217e46.css.map",
+    "main.1f98c3f6.js.map": "/interactiondesign/static/js/main.1f98c3f6.js.map",
     "787.cbcb3f2c.chunk.js.map": "/interactiondesign/static/js/787.cbcb3f2c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e6c13ad2.css",
-    "static/js/main.6f7e9963.js"
+    "static/css/main.ac217e46.css",
+    "static/js/main.1f98c3f6.js"
   ]
 }
