@@ -16,7 +16,7 @@ const StyledWrapper = styled.div`
     flex-direction:row-reverse;
 `;
 
-const Week1 = () => (
+const Week2 = () => (
     <OuterWrapper>
         <StyledWrapper>
             <div>
@@ -26,4 +26,4 @@ const Week1 = () => (
     </OuterWrapper>
 );
 
-export default Week1;
+export default Week2;
