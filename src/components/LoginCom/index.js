@@ -58,9 +58,9 @@ const StyledButton = styled.button`
     }
 `;
 
-const Week4 = () => {
+const LoginCom = () => {
 
-    const { register, handleSubmit, formState: {errors} }= useForm({
+    const { register, handleSubmit, formState: { errors } } = useForm({
         resolver: yupResolver(schema)
     });
     const onSubmit = data => console.log(data);
@@ -70,9 +70,9 @@ const Week4 = () => {
             <StyledHeader> Welcome </StyledHeader>
             <form onSubmit={handleSubmit(onSubmit)}>
                 <p>
-                    <StyledInput 
-                        type="text" 
-                        name="email" 
+                    <StyledInput
+                        type="text"
+                        name="email"
                         placeholder="Email"
                         {...register("email")}
                     />
@@ -80,11 +80,11 @@ const Week4 = () => {
                 <StyledErrorText> {errors.email?.message} </StyledErrorText>
 
                 <p>
-                    <StyledInput 
-                        type="password" 
-                        name="password" 
+                    <StyledInput
+                        type="password"
+                        name="password"
                         placeholder="Password"
-                        {...register("password")} 
+                        {...register("password")}
                     />
                     <StyledErrorText> {errors.password?.message} </StyledErrorText>
                 </p>
@@ -97,4 +97,4 @@ const Week4 = () => {
 };
 
 
-export default Week4;
+export default LoginCom;

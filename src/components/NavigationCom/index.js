@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import closeIcon from "./close_icon.svg";
-import burgerMenu from "./burger_menu.svg"
+import burgerMenu from "./burger_menu.svg";
+import background from "./Page.png";
 import { useSwipeable } from "react-swipeable";
 
 const StyledWrapper = styled.div`
@@ -47,16 +48,23 @@ const StyledNav = styled.ul`
     }`;
 
 const StyledBurgerMenu = styled.img`
-    float: right;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding-top: 50px;
+    padding-right: 50px;
     width: 50px;
     height: 50px;
-    fill: black;
     margin: 1rem 1rem;
     cursor: pointer;
 `;
 
+const StyledBackground = styled.img`
+    background-size: cover;
+`;
 
-const Week5 = () => {
+
+const NavigationCom = () => {
 
     const [navOpen, setNavOpen] = useState(true);
     const handleSwipe = useSwipeable({
@@ -75,14 +83,16 @@ const Week5 = () => {
 
     return (<>
         <StyledWrapper {...handleSwipe} >
+            <StyledBackground src={background} />
             <StyledSideNav open={navOpen}>
                 <StyledCLoseIcon onClick={handleClose} src={closeIcon} />
                 {
                     navOpen &&
                     (<StyledNav>
                         <li>Home</li>
-                        <li>About</li>
-                        <li>Privacy</li>
+                        <li>Shop</li>
+                        <li>Shop Sale</li>
+                        <li>About The Chair Co.</li>
                     </StyledNav>)
                 }
             </StyledSideNav>
@@ -94,4 +104,4 @@ const Week5 = () => {
     );
 };
 
-export default Week5;
+export default NavigationCom;

@@ -4,8 +4,8 @@ import styled from "styled-components";
 import LoaderCom from "./components/LoaderCom";
 import Week2 from "./components/Week2";
 import ButtonCom from "./components/ButtonCom";
-import Week4 from "./components/Week4";
-import Week5 from "./components/Week5";
+import LoginCom from "./components/LoginCom";
+import NavigationCom from "./components/NavigationCom";
 import Week6 from "./components/Week6";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
@@ -39,8 +39,8 @@ const Home = () => (
       </li>
       <li> <Link to="/week-2"> <h1>Week 2</h1> </Link> </li>
       <li> <Link to="/button-com"> <h1>Button</h1> </Link> </li>
-      <li> <Link to="/week-4"> <h1>Week 4</h1> </Link> </li>
-      <li> <Link to="/week-5"> <h1>Week 5</h1> </Link> </li>
+      <li> <Link to="/login-com"> <h1>Login Screen</h1> </Link> </li>
+      <li> <Link to="/navigation-com"> <h1>Navigation</h1> </Link> </li>
       <li> <Link to="/week-6"> <h1>Week 6</h1> </Link> </li>
     </StyledNav>
   </nav>
@@ -59,11 +59,11 @@ function App() {
         <Route path="/button-com">
           <ButtonCom />
         </Route>
-        <Route path="/week-4">
-          <Week4 />
+        <Route path="/login-com">
+          <LoginCom />
         </Route>
-        <Route path="/week-5">
-          <Week5 />
+        <Route path="/navigation-com">
+          <NavigationCom />
         </Route>
         <Route path="/week-6">
           <Week6 />

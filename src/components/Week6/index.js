@@ -1,12 +1,16 @@
 import React, { useState } from "react";
 import styled, { keyframes } from "styled-components";
 import dropdownMenu from "./dropdown_menu.svg";
+import dress from "./MidiDress3.jpg";
+
 
 const StyledWrapper = styled.div`
     display: flex;
     width: 100vw;
     height: 100vh;
+    flex-direction: column;
     justify-content: center;
+    padding-left: 150px;
     align-items: center;
 `;
 
@@ -17,17 +21,18 @@ const StyledMenu = styled.ul`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 300px;
+    width: 220px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     background: #D9D9D9;
     & li {
 
         &: hover {
-            background: #8E2F9D;
+            background: #583D36;
         }
 
         cursor: pointer;
         text-align: center;
+        font-size: 20px;
         width: 80%;
         height: 10px;
         list-style: none;
@@ -37,9 +42,19 @@ const StyledMenu = styled.ul`
 `;
 
 const StyledDropdownMenu = styled.img`
-    width: 300px;
+    width: 220px;
     float: right;
     cursor: pointer;
+`;
+
+const StyledDress = styled.img`
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding-top: 50px;
+    padding-right: 100px;
+    width: 500px;
+    height: 746px;
 `;
 
 const Menu = (props) => {
@@ -71,10 +86,18 @@ const Week6 = () => {
     }
 
     return (
-        <StyledWrapper>
-            <StyledDropdownMenu onClick={handleClick} src={dropdownMenu} />
-            <Menu open={open} onClick={handleClick} />
-        </StyledWrapper>)
+        <>
+            <StyledWrapper>
+                <StyledDropdownMenu onClick={handleClick} src={dropdownMenu} />
+                <Menu open={open} onClick={handleClick} />
+            </StyledWrapper>
+            <StyledDress src={dress} />
+        </>
+
+
+
+
+    )
 };
 
 export default Week6;
