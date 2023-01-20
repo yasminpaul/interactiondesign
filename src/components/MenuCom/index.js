@@ -77,7 +77,7 @@ const Menu = (props) => {
     )
 };
 
-const Week6 = () => {
+const MenuCom = () => {
 
     const [open, setOpen] = useState(false);
 
@@ -100,4 +100,4 @@ const Week6 = () => {
     )
 };
 
-export default Week6;
+export default MenuCom;
