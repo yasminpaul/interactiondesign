@@ -2,11 +2,10 @@ import React from "react";
 import "./App.css";
 import styled from "styled-components";
 import LoaderCom from "./components/LoaderCom";
-import Week2 from "./components/Week2";
 import ButtonCom from "./components/ButtonCom";
-import Week4 from "./components/Week4";
-import Week5 from "./components/Week5";
-import Week6 from "./components/Week6";
+import LoginCom from "./components/LoginCom";
+import NavigationCom from "./components/NavigationCom";
+import MenuCom from "./components/MenuCom";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 const StyledNav = styled.ul`
@@ -37,11 +36,10 @@ const Home = () => (
           <h1> Loader</h1>
         </Link>
       </li>
-      <li> <Link to="/week-2"> <h1>Week 2</h1> </Link> </li>
       <li> <Link to="/button-com"> <h1>Button</h1> </Link> </li>
-      <li> <Link to="/week-4"> <h1>Week 4</h1> </Link> </li>
-      <li> <Link to="/week-5"> <h1>Week 5</h1> </Link> </li>
-      <li> <Link to="/week-6"> <h1>Week 6</h1> </Link> </li>
+      <li> <Link to="/login-com"> <h1>Login Screen</h1> </Link> </li>
+      <li> <Link to="/navigation-com"> <h1>Navigation</h1> </Link> </li>
+      <li> <Link to="/menu-com"> <h1>Menu</h1> </Link> </li>
     </StyledNav>
   </nav>
 );
@@ -53,20 +51,17 @@ function App() {
         <Route path="/loader-com">
           <LoaderCom />
         </Route>
-        <Route path="/week-2">
-          <Week2 />
-        </Route>
         <Route path="/button-com">
           <ButtonCom />
         </Route>
-        <Route path="/week-4">
-          <Week4 />
+        <Route path="/login-com">
+          <LoginCom />
         </Route>
-        <Route path="/week-5">
-          <Week5 />
+        <Route path="/navigation-com">
+          <NavigationCom />
         </Route>
-        <Route path="/week-6">
-          <Week6 />
+        <Route path="/menu-com">
+          <MenuCom />
         </Route>
         <Route path="/">
           <Home />
